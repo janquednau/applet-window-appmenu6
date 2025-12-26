@@ -1,0 +1,4 @@
+appmenutest_autogen/timestamp: \
+	/home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt/test/CMakeLists.txt \
+	/home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt/test/main.cpp \
+	/usr/bin/cmake

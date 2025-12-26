@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libdbusmenuqt.a CMakeFiles/dbusmenuqt.dir/dbusmenuqt_autogen/mocs_compilation.cpp.o CMakeFiles/dbusmenuqt.dir/dbusmenuimporter.cpp.o CMakeFiles/dbusmenuqt.dir/dbusmenushortcut_p.cpp.o CMakeFiles/dbusmenuqt.dir/dbusmenutypes_p.cpp.o CMakeFiles/dbusmenuqt.dir/utils.cpp.o CMakeFiles/dbusmenuqt.dir/debug.cpp.o CMakeFiles/dbusmenuqt.dir/dbusmenu_interface.cpp.o
+/usr/bin/ranlib ../../lib/libdbusmenuqt.a

@@ -1,0 +1,8 @@
+set(__QT_DEPLOY_TARGET_org.kde.windowappmenu_FILE /home/janq/Downloads/applet-window-appmenu6/build/bin/org.kde.windowappmenu.so)
+set(__QT_DEPLOY_TARGET_org.kde.windowappmenu_TYPE MODULE_LIBRARY)
+set(__QT_DEPLOY_TARGET_appmenutest_FILE /home/janq/Downloads/applet-window-appmenu6/build/bin/appmenutest)
+set(__QT_DEPLOY_TARGET_appmenutest_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_dbusmenuqt_FILE /home/janq/Downloads/applet-window-appmenu6/build/lib/libdbusmenuqt.a)
+set(__QT_DEPLOY_TARGET_dbusmenuqt_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_appmenuplugin_FILE /home/janq/Downloads/applet-window-appmenu6/build/bin/libappmenuplugin.so)
+set(__QT_DEPLOY_TARGET_appmenuplugin_TYPE SHARED_LIBRARY)
