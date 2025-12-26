@@ -10,8 +10,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/org.kde.windowappmenu.dir/decorationpalette.cpp.o.d"
   "CMakeFiles/org.kde.windowappmenu.dir/org.kde.windowappmenu_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/org.kde.windowappmenu.dir/org.kde.windowappmenu_autogen/mocs_compilation.cpp.o.d"
-  "org.kde.windowappmenu_autogen/mocs_compilation.cpp"
-  "org.kde.windowappmenu_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.

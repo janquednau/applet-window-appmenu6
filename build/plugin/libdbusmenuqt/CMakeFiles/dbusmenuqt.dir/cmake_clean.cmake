@@ -20,8 +20,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/dbusmenuqt.dir/utils.cpp.o.d"
   "dbusmenu_interface.cpp"
   "dbusmenu_interface.h"
-  "dbusmenuqt_autogen/mocs_compilation.cpp"
-  "dbusmenuqt_autogen/timestamp"
   "moc_dbusmenu_interface.cpp"
 )
 

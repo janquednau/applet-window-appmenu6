@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "" "lib/org.kde.windowappmenu_autogen/timestamp" "custom" "lib/org.kde.windowappmenu_autogen/deps"
   "/home/janq/Downloads/applet-window-appmenu6/lib/appmenuapplet.cpp" "lib/CMakeFiles/org.kde.windowappmenu.dir/appmenuapplet.cpp.o" "gcc" "lib/CMakeFiles/org.kde.windowappmenu.dir/appmenuapplet.cpp.o.d"
   "/home/janq/Downloads/applet-window-appmenu6/lib/decorationpalette.cpp" "lib/CMakeFiles/org.kde.windowappmenu.dir/decorationpalette.cpp.o" "gcc" "lib/CMakeFiles/org.kde.windowappmenu.dir/decorationpalette.cpp.o.d"
   "/home/janq/Downloads/applet-window-appmenu6/build/lib/org.kde.windowappmenu_autogen/mocs_compilation.cpp" "lib/CMakeFiles/org.kde.windowappmenu.dir/org.kde.windowappmenu_autogen/mocs_compilation.cpp.o" "gcc" "lib/CMakeFiles/org.kde.windowappmenu.dir/org.kde.windowappmenu_autogen/mocs_compilation.cpp.o.d"

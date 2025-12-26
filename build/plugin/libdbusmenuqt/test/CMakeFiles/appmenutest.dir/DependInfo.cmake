@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "" "plugin/libdbusmenuqt/test/appmenutest_autogen/timestamp" "custom" "plugin/libdbusmenuqt/test/appmenutest_autogen/deps"
   "/home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/test/appmenutest_autogen/mocs_compilation.cpp" "plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/appmenutest_autogen/mocs_compilation.cpp.o" "gcc" "plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/appmenutest_autogen/mocs_compilation.cpp.o.d"
   "/home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt/test/main.cpp" "plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/main.cpp.o" "gcc" "plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/main.cpp.o.d"
   )

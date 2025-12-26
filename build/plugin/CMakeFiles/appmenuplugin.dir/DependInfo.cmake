@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "" "plugin/appmenuplugin_autogen/timestamp" "custom" "plugin/appmenuplugin_autogen/deps"
   "/home/janq/Downloads/applet-window-appmenu6/plugin/appmenumodel.cpp" "plugin/CMakeFiles/appmenuplugin.dir/appmenumodel.cpp.o" "gcc" "plugin/CMakeFiles/appmenuplugin.dir/appmenumodel.cpp.o.d"
   "/home/janq/Downloads/applet-window-appmenu6/plugin/appmenuplugin.cpp" "plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin.cpp.o" "gcc" "plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin.cpp.o.d"
   "/home/janq/Downloads/applet-window-appmenu6/build/plugin/appmenuplugin_autogen/mocs_compilation.cpp" "plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin_autogen/mocs_compilation.cpp.o" "gcc" "plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin_autogen/mocs_compilation.cpp.o.d"

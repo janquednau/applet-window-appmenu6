@@ -8,8 +8,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/appmenutest.dir/appmenutest_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/appmenutest.dir/main.cpp.o"
   "CMakeFiles/appmenutest.dir/main.cpp.o.d"
-  "appmenutest_autogen/mocs_compilation.cpp"
-  "appmenutest_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.

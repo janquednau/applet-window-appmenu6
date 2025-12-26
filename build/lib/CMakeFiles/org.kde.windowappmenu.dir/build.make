@@ -69,19 +69,13 @@ include lib/CMakeFiles/org.kde.windowappmenu.dir/progress.make
 # Include the compile flags for this target's objects.
 include lib/CMakeFiles/org.kde.windowappmenu.dir/flags.make
 
-lib/org.kde.windowappmenu_autogen/timestamp: /usr/lib/qt6/libexec/moc
-lib/org.kde.windowappmenu_autogen/timestamp: lib/CMakeFiles/org.kde.windowappmenu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target org.kde.windowappmenu"
-	cd /home/janq/Downloads/applet-window-appmenu6/build/lib && /usr/bin/cmake -E cmake_autogen /home/janq/Downloads/applet-window-appmenu6/build/lib/CMakeFiles/org.kde.windowappmenu_autogen.dir/AutogenInfo.json Release
-	cd /home/janq/Downloads/applet-window-appmenu6/build/lib && /usr/bin/cmake -E touch /home/janq/Downloads/applet-window-appmenu6/build/lib/org.kde.windowappmenu_autogen/timestamp
-
 lib/CMakeFiles/org.kde.windowappmenu.dir/codegen:
 .PHONY : lib/CMakeFiles/org.kde.windowappmenu.dir/codegen
 
 lib/CMakeFiles/org.kde.windowappmenu.dir/org.kde.windowappmenu_autogen/mocs_compilation.cpp.o: lib/CMakeFiles/org.kde.windowappmenu.dir/flags.make
 lib/CMakeFiles/org.kde.windowappmenu.dir/org.kde.windowappmenu_autogen/mocs_compilation.cpp.o: lib/org.kde.windowappmenu_autogen/mocs_compilation.cpp
 lib/CMakeFiles/org.kde.windowappmenu.dir/org.kde.windowappmenu_autogen/mocs_compilation.cpp.o: lib/CMakeFiles/org.kde.windowappmenu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/org.kde.windowappmenu.dir/org.kde.windowappmenu_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/org.kde.windowappmenu.dir/org.kde.windowappmenu_autogen/mocs_compilation.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/org.kde.windowappmenu.dir/org.kde.windowappmenu_autogen/mocs_compilation.cpp.o -MF CMakeFiles/org.kde.windowappmenu.dir/org.kde.windowappmenu_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/org.kde.windowappmenu.dir/org.kde.windowappmenu_autogen/mocs_compilation.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/build/lib/org.kde.windowappmenu_autogen/mocs_compilation.cpp
 
 lib/CMakeFiles/org.kde.windowappmenu.dir/org.kde.windowappmenu_autogen/mocs_compilation.cpp.i: cmake_force
@@ -95,7 +89,7 @@ lib/CMakeFiles/org.kde.windowappmenu.dir/org.kde.windowappmenu_autogen/mocs_comp
 lib/CMakeFiles/org.kde.windowappmenu.dir/appmenuapplet.cpp.o: lib/CMakeFiles/org.kde.windowappmenu.dir/flags.make
 lib/CMakeFiles/org.kde.windowappmenu.dir/appmenuapplet.cpp.o: /home/janq/Downloads/applet-window-appmenu6/lib/appmenuapplet.cpp
 lib/CMakeFiles/org.kde.windowappmenu.dir/appmenuapplet.cpp.o: lib/CMakeFiles/org.kde.windowappmenu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/CMakeFiles/org.kde.windowappmenu.dir/appmenuapplet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/org.kde.windowappmenu.dir/appmenuapplet.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/org.kde.windowappmenu.dir/appmenuapplet.cpp.o -MF CMakeFiles/org.kde.windowappmenu.dir/appmenuapplet.cpp.o.d -o CMakeFiles/org.kde.windowappmenu.dir/appmenuapplet.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/lib/appmenuapplet.cpp
 
 lib/CMakeFiles/org.kde.windowappmenu.dir/appmenuapplet.cpp.i: cmake_force
@@ -109,7 +103,7 @@ lib/CMakeFiles/org.kde.windowappmenu.dir/appmenuapplet.cpp.s: cmake_force
 lib/CMakeFiles/org.kde.windowappmenu.dir/decorationpalette.cpp.o: lib/CMakeFiles/org.kde.windowappmenu.dir/flags.make
 lib/CMakeFiles/org.kde.windowappmenu.dir/decorationpalette.cpp.o: /home/janq/Downloads/applet-window-appmenu6/lib/decorationpalette.cpp
 lib/CMakeFiles/org.kde.windowappmenu.dir/decorationpalette.cpp.o: lib/CMakeFiles/org.kde.windowappmenu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object lib/CMakeFiles/org.kde.windowappmenu.dir/decorationpalette.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object lib/CMakeFiles/org.kde.windowappmenu.dir/decorationpalette.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/org.kde.windowappmenu.dir/decorationpalette.cpp.o -MF CMakeFiles/org.kde.windowappmenu.dir/decorationpalette.cpp.o.d -o CMakeFiles/org.kde.windowappmenu.dir/decorationpalette.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/lib/decorationpalette.cpp
 
 lib/CMakeFiles/org.kde.windowappmenu.dir/decorationpalette.cpp.i: cmake_force
@@ -137,7 +131,7 @@ bin/org.kde.windowappmenu.so: /usr/lib/x86_64-linux-gnu/libX11.so
 bin/org.kde.windowappmenu.so: /usr/lib/x86_64-linux-gnu/libGLX.so
 bin/org.kde.windowappmenu.so: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 bin/org.kde.windowappmenu.so: lib/CMakeFiles/org.kde.windowappmenu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared module ../bin/org.kde.windowappmenu.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared module ../bin/org.kde.windowappmenu.so"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/org.kde.windowappmenu.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -148,7 +142,7 @@ lib/CMakeFiles/org.kde.windowappmenu.dir/clean:
 	cd /home/janq/Downloads/applet-window-appmenu6/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/org.kde.windowappmenu.dir/cmake_clean.cmake
 .PHONY : lib/CMakeFiles/org.kde.windowappmenu.dir/clean
 
-lib/CMakeFiles/org.kde.windowappmenu.dir/depend: lib/org.kde.windowappmenu_autogen/timestamp
+lib/CMakeFiles/org.kde.windowappmenu.dir/depend:
 	cd /home/janq/Downloads/applet-window-appmenu6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/janq/Downloads/applet-window-appmenu6 /home/janq/Downloads/applet-window-appmenu6/lib /home/janq/Downloads/applet-window-appmenu6/build /home/janq/Downloads/applet-window-appmenu6/build/lib /home/janq/Downloads/applet-window-appmenu6/build/lib/CMakeFiles/org.kde.windowappmenu.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : lib/CMakeFiles/org.kde.windowappmenu.dir/depend
 

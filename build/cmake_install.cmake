@@ -53,7 +53,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "applet_window_appmenu" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/plasma/plasmoids/org.kde.windowappmenu" TYPE DIRECTORY FILES "/home/janq/Downloads/applet-window-appmenu6/package/" REGEX "/\\.svn$" EXCLUDE REGEX "/[^/]*\\.qmlc$" EXCLUDE REGEX "/CMakeLists\\.txt$" EXCLUDE REGEX "/Messages\\.sh$" EXCLUDE REGEX "/dummydata$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kpackage/kpackage/applet/org.kde.windowappmenu" TYPE DIRECTORY FILES "/home/janq/Downloads/applet-window-appmenu6/package/" REGEX "/\\.svn$" EXCLUDE REGEX "/[^/]*\\.qmlc$" EXCLUDE REGEX "/CMakeLists\\.txt$" EXCLUDE REGEX "/Messages\\.sh$" EXCLUDE REGEX "/dummydata$" EXCLUDE)
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

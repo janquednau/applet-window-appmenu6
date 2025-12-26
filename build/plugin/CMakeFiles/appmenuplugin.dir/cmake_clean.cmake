@@ -22,8 +22,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/appmenuplugin.dir/wm/waylandwindowmanager.cpp.o.d"
   "CMakeFiles/appmenuplugin.dir/wm/x11fallbackwindowmanager.cpp.o"
   "CMakeFiles/appmenuplugin.dir/wm/x11fallbackwindowmanager.cpp.o.d"
-  "appmenuplugin_autogen/mocs_compilation.cpp"
-  "appmenuplugin_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.

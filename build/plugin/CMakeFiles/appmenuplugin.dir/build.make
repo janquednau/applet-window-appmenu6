@@ -69,19 +69,13 @@ include plugin/CMakeFiles/appmenuplugin.dir/progress.make
 # Include the compile flags for this target's objects.
 include plugin/CMakeFiles/appmenuplugin.dir/flags.make
 
-plugin/appmenuplugin_autogen/timestamp: /usr/lib/qt6/libexec/moc
-plugin/appmenuplugin_autogen/timestamp: plugin/CMakeFiles/appmenuplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target appmenuplugin"
-	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin && /usr/bin/cmake -E cmake_autogen /home/janq/Downloads/applet-window-appmenu6/build/plugin/CMakeFiles/appmenuplugin_autogen.dir/AutogenInfo.json Release
-	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin && /usr/bin/cmake -E touch /home/janq/Downloads/applet-window-appmenu6/build/plugin/appmenuplugin_autogen/timestamp
-
 plugin/CMakeFiles/appmenuplugin.dir/codegen:
 .PHONY : plugin/CMakeFiles/appmenuplugin.dir/codegen
 
 plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin_autogen/mocs_compilation.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/flags.make
 plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin_autogen/mocs_compilation.cpp.o: plugin/appmenuplugin_autogen/mocs_compilation.cpp
 plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin_autogen/mocs_compilation.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin_autogen/mocs_compilation.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin_autogen/mocs_compilation.cpp.o -MF CMakeFiles/appmenuplugin.dir/appmenuplugin_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/appmenuplugin.dir/appmenuplugin_autogen/mocs_compilation.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/build/plugin/appmenuplugin_autogen/mocs_compilation.cpp
 
 plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin_autogen/mocs_compilation.cpp.i: cmake_force
@@ -95,7 +89,7 @@ plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin_autogen/mocs_compilation.cpp.s
 plugin/CMakeFiles/appmenuplugin.dir/appmenumodel.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/flags.make
 plugin/CMakeFiles/appmenuplugin.dir/appmenumodel.cpp.o: /home/janq/Downloads/applet-window-appmenu6/plugin/appmenumodel.cpp
 plugin/CMakeFiles/appmenuplugin.dir/appmenumodel.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/appmenumodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/appmenumodel.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/CMakeFiles/appmenuplugin.dir/appmenumodel.cpp.o -MF CMakeFiles/appmenuplugin.dir/appmenumodel.cpp.o.d -o CMakeFiles/appmenuplugin.dir/appmenumodel.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/plugin/appmenumodel.cpp
 
 plugin/CMakeFiles/appmenuplugin.dir/appmenumodel.cpp.i: cmake_force
@@ -109,7 +103,7 @@ plugin/CMakeFiles/appmenuplugin.dir/appmenumodel.cpp.s: cmake_force
 plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/flags.make
 plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin.cpp.o: /home/janq/Downloads/applet-window-appmenu6/plugin/appmenuplugin.cpp
 plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin.cpp.o -MF CMakeFiles/appmenuplugin.dir/appmenuplugin.cpp.o.d -o CMakeFiles/appmenuplugin.dir/appmenuplugin.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/plugin/appmenuplugin.cpp
 
 plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin.cpp.i: cmake_force
@@ -123,7 +117,7 @@ plugin/CMakeFiles/appmenuplugin.dir/appmenuplugin.cpp.s: cmake_force
 plugin/CMakeFiles/appmenuplugin.dir/commontools.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/flags.make
 plugin/CMakeFiles/appmenuplugin.dir/commontools.cpp.o: /home/janq/Downloads/applet-window-appmenu6/plugin/commontools.cpp
 plugin/CMakeFiles/appmenuplugin.dir/commontools.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/commontools.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/commontools.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/CMakeFiles/appmenuplugin.dir/commontools.cpp.o -MF CMakeFiles/appmenuplugin.dir/commontools.cpp.o.d -o CMakeFiles/appmenuplugin.dir/commontools.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/plugin/commontools.cpp
 
 plugin/CMakeFiles/appmenuplugin.dir/commontools.cpp.i: cmake_force
@@ -137,7 +131,7 @@ plugin/CMakeFiles/appmenuplugin.dir/commontools.cpp.s: cmake_force
 plugin/CMakeFiles/appmenuplugin.dir/schemecolors.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/flags.make
 plugin/CMakeFiles/appmenuplugin.dir/schemecolors.cpp.o: /home/janq/Downloads/applet-window-appmenu6/plugin/schemecolors.cpp
 plugin/CMakeFiles/appmenuplugin.dir/schemecolors.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/schemecolors.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/schemecolors.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/CMakeFiles/appmenuplugin.dir/schemecolors.cpp.o -MF CMakeFiles/appmenuplugin.dir/schemecolors.cpp.o.d -o CMakeFiles/appmenuplugin.dir/schemecolors.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/plugin/schemecolors.cpp
 
 plugin/CMakeFiles/appmenuplugin.dir/schemecolors.cpp.i: cmake_force
@@ -151,7 +145,7 @@ plugin/CMakeFiles/appmenuplugin.dir/schemecolors.cpp.s: cmake_force
 plugin/CMakeFiles/appmenuplugin.dir/schemesmodel.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/flags.make
 plugin/CMakeFiles/appmenuplugin.dir/schemesmodel.cpp.o: /home/janq/Downloads/applet-window-appmenu6/plugin/schemesmodel.cpp
 plugin/CMakeFiles/appmenuplugin.dir/schemesmodel.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/schemesmodel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/schemesmodel.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/CMakeFiles/appmenuplugin.dir/schemesmodel.cpp.o -MF CMakeFiles/appmenuplugin.dir/schemesmodel.cpp.o.d -o CMakeFiles/appmenuplugin.dir/schemesmodel.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/plugin/schemesmodel.cpp
 
 plugin/CMakeFiles/appmenuplugin.dir/schemesmodel.cpp.i: cmake_force
@@ -165,7 +159,7 @@ plugin/CMakeFiles/appmenuplugin.dir/schemesmodel.cpp.s: cmake_force
 plugin/CMakeFiles/appmenuplugin.dir/wm/abstractwindowmanager.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/flags.make
 plugin/CMakeFiles/appmenuplugin.dir/wm/abstractwindowmanager.cpp.o: /home/janq/Downloads/applet-window-appmenu6/plugin/wm/abstractwindowmanager.cpp
 plugin/CMakeFiles/appmenuplugin.dir/wm/abstractwindowmanager.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/wm/abstractwindowmanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/wm/abstractwindowmanager.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/CMakeFiles/appmenuplugin.dir/wm/abstractwindowmanager.cpp.o -MF CMakeFiles/appmenuplugin.dir/wm/abstractwindowmanager.cpp.o.d -o CMakeFiles/appmenuplugin.dir/wm/abstractwindowmanager.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/plugin/wm/abstractwindowmanager.cpp
 
 plugin/CMakeFiles/appmenuplugin.dir/wm/abstractwindowmanager.cpp.i: cmake_force
@@ -179,7 +173,7 @@ plugin/CMakeFiles/appmenuplugin.dir/wm/abstractwindowmanager.cpp.s: cmake_force
 plugin/CMakeFiles/appmenuplugin.dir/wm/waylandwindowmanager.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/flags.make
 plugin/CMakeFiles/appmenuplugin.dir/wm/waylandwindowmanager.cpp.o: /home/janq/Downloads/applet-window-appmenu6/plugin/wm/waylandwindowmanager.cpp
 plugin/CMakeFiles/appmenuplugin.dir/wm/waylandwindowmanager.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/wm/waylandwindowmanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/wm/waylandwindowmanager.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/CMakeFiles/appmenuplugin.dir/wm/waylandwindowmanager.cpp.o -MF CMakeFiles/appmenuplugin.dir/wm/waylandwindowmanager.cpp.o.d -o CMakeFiles/appmenuplugin.dir/wm/waylandwindowmanager.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/plugin/wm/waylandwindowmanager.cpp
 
 plugin/CMakeFiles/appmenuplugin.dir/wm/waylandwindowmanager.cpp.i: cmake_force
@@ -193,7 +187,7 @@ plugin/CMakeFiles/appmenuplugin.dir/wm/waylandwindowmanager.cpp.s: cmake_force
 plugin/CMakeFiles/appmenuplugin.dir/wm/x11fallbackwindowmanager.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/flags.make
 plugin/CMakeFiles/appmenuplugin.dir/wm/x11fallbackwindowmanager.cpp.o: /home/janq/Downloads/applet-window-appmenu6/plugin/wm/x11fallbackwindowmanager.cpp
 plugin/CMakeFiles/appmenuplugin.dir/wm/x11fallbackwindowmanager.cpp.o: plugin/CMakeFiles/appmenuplugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/wm/x11fallbackwindowmanager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object plugin/CMakeFiles/appmenuplugin.dir/wm/x11fallbackwindowmanager.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/CMakeFiles/appmenuplugin.dir/wm/x11fallbackwindowmanager.cpp.o -MF CMakeFiles/appmenuplugin.dir/wm/x11fallbackwindowmanager.cpp.o.d -o CMakeFiles/appmenuplugin.dir/wm/x11fallbackwindowmanager.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/plugin/wm/x11fallbackwindowmanager.cpp
 
 plugin/CMakeFiles/appmenuplugin.dir/wm/x11fallbackwindowmanager.cpp.i: cmake_force
@@ -235,7 +229,7 @@ bin/libappmenuplugin.so: /usr/lib/x86_64-linux-gnu/libX11.so
 bin/libappmenuplugin.so: /usr/lib/x86_64-linux-gnu/libGLX.so
 bin/libappmenuplugin.so: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 bin/libappmenuplugin.so: plugin/CMakeFiles/appmenuplugin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library ../bin/libappmenuplugin.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX shared library ../bin/libappmenuplugin.so"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/appmenuplugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -246,7 +240,7 @@ plugin/CMakeFiles/appmenuplugin.dir/clean:
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin && $(CMAKE_COMMAND) -P CMakeFiles/appmenuplugin.dir/cmake_clean.cmake
 .PHONY : plugin/CMakeFiles/appmenuplugin.dir/clean
 
-plugin/CMakeFiles/appmenuplugin.dir/depend: plugin/appmenuplugin_autogen/timestamp
+plugin/CMakeFiles/appmenuplugin.dir/depend:
 	cd /home/janq/Downloads/applet-window-appmenu6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/janq/Downloads/applet-window-appmenu6 /home/janq/Downloads/applet-window-appmenu6/plugin /home/janq/Downloads/applet-window-appmenu6/build /home/janq/Downloads/applet-window-appmenu6/build/plugin /home/janq/Downloads/applet-window-appmenu6/build/plugin/CMakeFiles/appmenuplugin.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : plugin/CMakeFiles/appmenuplugin.dir/depend
 

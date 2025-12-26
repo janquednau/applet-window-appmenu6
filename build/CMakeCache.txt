@@ -267,6 +267,12 @@ Fontconfig_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 Fontconfig_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libfontconfig.so
 
+//Path to a program.
+GETTEXT_MSGFMT_EXECUTABLE:FILEPATH=/usr/bin/msgfmt
+
+//Path to a program.
+GETTEXT_MSGMERGE_EXECUTABLE:FILEPATH=/usr/bin/msgmerge
+
 //application desktop files (DATAROOTDIR/applications)
 KDE_INSTALL_APPDIR:PATH=
 
@@ -445,6 +451,9 @@ KF6Config_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/KF6Config
 //The directory containing a CMake configuration file for KF6CoreAddons.
 KF6CoreAddons_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/KF6CoreAddons
 
+//The directory containing a CMake configuration file for KF6I18n.
+KF6I18n_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/KF6I18n
+
 //The directory containing a CMake configuration file for KF6ItemModels.
 KF6ItemModels_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/KF6ItemModels
 
@@ -457,8 +466,11 @@ KF6WidgetsAddons_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/KF6WidgetsAddons
 //The directory containing a CMake configuration file for KF6WindowSystem.
 KF6WindowSystem_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/KF6WindowSystem
 
-//The directory containing a CMake configuration file for KWayland.
-KWayland_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/KWayland
+//Skip processing of po files
+KF_SKIP_PO_PROCESSING:BOOL=OFF
+
+//Path to a program.
+KI18N_PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python3
 
 //The directory containing a CMake configuration file for LibTaskManager.
 LibTaskManager_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/LibTaskManager
@@ -596,8 +608,20 @@ Qt6QmlWorkerScript_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6QmlWorkerScript
 //The directory containing a CMake configuration file for Qt6Qml.
 Qt6Qml_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6Qml
 
+//The directory containing a CMake configuration file for Qt6QuickControls2Private.
+Qt6QuickControls2Private_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickControls2Private
+
+//The directory containing a CMake configuration file for Qt6QuickControls2.
+Qt6QuickControls2_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickControls2
+
 //The directory containing a CMake configuration file for Qt6QuickPrivate.
 Qt6QuickPrivate_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickPrivate
+
+//The directory containing a CMake configuration file for Qt6QuickTemplates2Private.
+Qt6QuickTemplates2Private_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickTemplates2Private
+
+//The directory containing a CMake configuration file for Qt6QuickTemplates2.
+Qt6QuickTemplates2_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickTemplates2
 
 //The directory containing a CMake configuration file for Qt6QuickTools.
 Qt6QuickTools_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickTools
@@ -1244,12 +1268,18 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Gettext
+FIND_PACKAGE_MESSAGE_DETAILS_Gettext:INTERNAL=[/usr/bin/msgmerge][/usr/bin/msgfmt][v0.23.1()]
 //Details about finding KF6
-FIND_PACKAGE_MESSAGE_DETAILS_KF6:INTERNAL=[success][cfound components: WindowSystem ConfigWidgets CoreAddons ][v6.20.0(6.1.0)]
+FIND_PACKAGE_MESSAGE_DETAILS_KF6:INTERNAL=[success][cfound components: WindowSystem ConfigWidgets CoreAddons I18n ItemModels ][v6.20.0(6.5.0)]
 //Details about finding KF6ConfigWidgets
 FIND_PACKAGE_MESSAGE_DETAILS_KF6ConfigWidgets:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/KF6ConfigWidgets/KF6ConfigWidgetsConfig.cmake][v6.20.0()]
 //Details about finding KF6CoreAddons
 FIND_PACKAGE_MESSAGE_DETAILS_KF6CoreAddons:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/KF6CoreAddons/KF6CoreAddonsConfig.cmake][v6.20.0()]
+//Details about finding KF6I18n
+FIND_PACKAGE_MESSAGE_DETAILS_KF6I18n:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/KF6I18n/KF6I18nConfig.cmake][v6.20.0()]
+//Details about finding KF6ItemModels
+FIND_PACKAGE_MESSAGE_DETAILS_KF6ItemModels:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/KF6ItemModels/KF6ItemModelsConfig.cmake][v6.20.0()]
 //Details about finding KF6WindowSystem
 FIND_PACKAGE_MESSAGE_DETAILS_KF6WindowSystem:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/KF6WindowSystem/KF6WindowSystemConfig.cmake][v6.20.0()]
 //Details about finding OpenGL
@@ -2157,6 +2187,32 @@ QT_FEATURE_quick_tableview:INTERNAL=ON
 QT_FEATURE_quick_treeview:INTERNAL=ON
 //Qt feature: quick_viewtransitions (from target Qt6::Quick)
 QT_FEATURE_quick_viewtransitions:INTERNAL=ON
+//Qt feature: quickcontrols2_basic (from target Qt6::QuickControls2)
+QT_FEATURE_quickcontrols2_basic:INTERNAL=ON
+//Qt feature: quickcontrols2_fluentwinui3 (from target Qt6::QuickControls2)
+QT_FEATURE_quickcontrols2_fluentwinui3:INTERNAL=ON
+//Qt feature: quickcontrols2_fusion (from target Qt6::QuickControls2)
+QT_FEATURE_quickcontrols2_fusion:INTERNAL=ON
+//Qt feature: quickcontrols2_imagine (from target Qt6::QuickControls2)
+QT_FEATURE_quickcontrols2_imagine:INTERNAL=ON
+//Qt feature: quickcontrols2_ios (from target Qt6::QuickControls2)
+QT_FEATURE_quickcontrols2_ios:INTERNAL=OFF
+//Qt feature: quickcontrols2_macos (from target Qt6::QuickControls2)
+QT_FEATURE_quickcontrols2_macos:INTERNAL=OFF
+//Qt feature: quickcontrols2_material (from target Qt6::QuickControls2)
+QT_FEATURE_quickcontrols2_material:INTERNAL=ON
+//Qt feature: quickcontrols2_universal (from target Qt6::QuickControls2)
+QT_FEATURE_quickcontrols2_universal:INTERNAL=ON
+//Qt feature: quickcontrols2_windows (from target Qt6::QuickControls2)
+QT_FEATURE_quickcontrols2_windows:INTERNAL=OFF
+//Qt feature: quicktemplates2_calendar (from target Qt6::QuickTemplates2)
+QT_FEATURE_quicktemplates2_calendar:INTERNAL=ON
+//Qt feature: quicktemplates2_container (from target Qt6::QuickTemplates2)
+QT_FEATURE_quicktemplates2_container:INTERNAL=ON
+//Qt feature: quicktemplates2_hover (from target Qt6::QuickTemplates2)
+QT_FEATURE_quicktemplates2_hover:INTERNAL=ON
+//Qt feature: quicktemplates2_multitouch (from target Qt6::QuickTemplates2)
+QT_FEATURE_quicktemplates2_multitouch:INTERNAL=ON
 //Qt feature: radiobutton (from target Qt6::Widgets)
 QT_FEATURE_radiobutton:INTERNAL=ON
 //Qt feature: raster_64bit (from target Qt6::Gui)

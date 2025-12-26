@@ -50,10 +50,6 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWindowsHelpers.cmake",
 		"/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Dependencies.cmake",
-		"/usr/lib/x86_64-linux-gnu/cmake/LibTaskManager/LibTaskManagerConfigVersion.cmake",
-		"/usr/lib/x86_64-linux-gnu/cmake/LibTaskManager/LibTaskManagerConfig.cmake",
-		"/usr/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake",
-		"/usr/lib/x86_64-linux-gnu/cmake/LibTaskManager/LibTaskManagerLibraryTargets.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Plasma/PlasmaConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Plasma/PlasmaConfig.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Plasma/PlasmaTargets.cmake",
@@ -166,6 +162,7 @@
 	"MOC_COMPILATION_FILE" : "/home/janq/Downloads/applet-window-appmenu6/build/plugin/appmenuplugin_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
+		"HAVE_X11",
 		"KCOREADDONS_LIB",
 		"QT_CORE_LIB",
 		"QT_DBUS_LIB",
@@ -254,7 +251,7 @@
 	"MOC_PREDEFS_CMD" : 
 	[
 		"/usr/bin/c++",
-		"-std=gnu++14",
+		"-std=gnu++20",
 		"-dM",
 		"-E",
 		"-c",

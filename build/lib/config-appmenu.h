@@ -1,10 +1,10 @@
 /* Define if you have X11 at all */
-#define HAVE_X11 1
+#define HAVE_X11 0
 
 /* Define if you have LibTaskManager at all */
 // #define HAVE_LibTaskManager) 0
 
-#define KF6_CURRENTMINOR_VERSION 20
+/* #undef KF6_CURRENTMINOR_VERSION */
 
-#define LibTaskManager_CURRENTMINOR_VERSION 5
+/* #undef LibTaskManager_CURRENTMINOR_VERSION */
 

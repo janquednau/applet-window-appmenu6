@@ -69,19 +69,13 @@ include plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/progress.make
 # Include the compile flags for this target's objects.
 include plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/flags.make
 
-plugin/libdbusmenuqt/test/appmenutest_autogen/timestamp: /usr/lib/qt6/libexec/moc
-plugin/libdbusmenuqt/test/appmenutest_autogen/timestamp: plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target appmenutest"
-	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/test && /usr/bin/cmake -E cmake_autogen /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/test/CMakeFiles/appmenutest_autogen.dir/AutogenInfo.json Release
-	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/test && /usr/bin/cmake -E touch /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/test/appmenutest_autogen/timestamp
-
 plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/codegen:
 .PHONY : plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/codegen
 
 plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/appmenutest_autogen/mocs_compilation.cpp.o: plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/flags.make
 plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/appmenutest_autogen/mocs_compilation.cpp.o: plugin/libdbusmenuqt/test/appmenutest_autogen/mocs_compilation.cpp
 plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/appmenutest_autogen/mocs_compilation.cpp.o: plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/appmenutest_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/appmenutest_autogen/mocs_compilation.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/appmenutest_autogen/mocs_compilation.cpp.o -MF CMakeFiles/appmenutest.dir/appmenutest_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/appmenutest.dir/appmenutest_autogen/mocs_compilation.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/test/appmenutest_autogen/mocs_compilation.cpp
 
 plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/appmenutest_autogen/mocs_compilation.cpp.i: cmake_force
@@ -95,7 +89,7 @@ plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/appmenutest_autogen/mocs_co
 plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/main.cpp.o: plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/flags.make
 plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/main.cpp.o: /home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt/test/main.cpp
 plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/main.cpp.o: plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/main.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/test && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/main.cpp.o -MF CMakeFiles/appmenutest.dir/main.cpp.o.d -o CMakeFiles/appmenutest.dir/main.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt/test/main.cpp
 
 plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/main.cpp.i: cmake_force
@@ -120,7 +114,7 @@ bin/appmenutest: plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/build.make
 bin/appmenutest: /usr/lib/x86_64-linux-gnu/libGLX.so
 bin/appmenutest: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 bin/appmenutest: plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../../../bin/appmenutest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../bin/appmenutest"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/appmenutest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -131,7 +125,7 @@ plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/clean:
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/test && $(CMAKE_COMMAND) -P CMakeFiles/appmenutest.dir/cmake_clean.cmake
 .PHONY : plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/clean
 
-plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/depend: plugin/libdbusmenuqt/test/appmenutest_autogen/timestamp
+plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/depend:
 	cd /home/janq/Downloads/applet-window-appmenu6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/janq/Downloads/applet-window-appmenu6 /home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt/test /home/janq/Downloads/applet-window-appmenu6/build /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/test /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : plugin/libdbusmenuqt/test/CMakeFiles/appmenutest.dir/depend
 

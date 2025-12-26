@@ -81,19 +81,13 @@ plugin/libdbusmenuqt/dbusmenu_interface.cpp: /usr/lib/qt6/bin/qdbuscpp2xml
 plugin/libdbusmenuqt/dbusmenu_interface.h: plugin/libdbusmenuqt/dbusmenu_interface.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate plugin/libdbusmenuqt/dbusmenu_interface.h
 
-plugin/libdbusmenuqt/dbusmenuqt_autogen/timestamp: /usr/lib/qt6/libexec/moc
-plugin/libdbusmenuqt/dbusmenuqt_autogen/timestamp: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Automatic MOC for target dbusmenuqt"
-	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt && /usr/bin/cmake -E cmake_autogen /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt_autogen.dir/AutogenInfo.json Release
-	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt && /usr/bin/cmake -E touch /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/dbusmenuqt_autogen/timestamp
-
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/codegen:
 .PHONY : plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/codegen
 
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuqt_autogen/mocs_compilation.cpp.o: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/flags.make
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuqt_autogen/mocs_compilation.cpp.o: plugin/libdbusmenuqt/dbusmenuqt_autogen/mocs_compilation.cpp
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuqt_autogen/mocs_compilation.cpp.o: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuqt_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuqt_autogen/mocs_compilation.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuqt_autogen/mocs_compilation.cpp.o -MF CMakeFiles/dbusmenuqt.dir/dbusmenuqt_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/dbusmenuqt.dir/dbusmenuqt_autogen/mocs_compilation.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/dbusmenuqt_autogen/mocs_compilation.cpp
 
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuqt_autogen/mocs_compilation.cpp.i: cmake_force
@@ -107,7 +101,7 @@ plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuqt_autogen/mocs_compilati
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuimporter.cpp.o: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/flags.make
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuimporter.cpp.o: /home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt/dbusmenuimporter.cpp
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuimporter.cpp.o: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuimporter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuimporter.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuimporter.cpp.o -MF CMakeFiles/dbusmenuqt.dir/dbusmenuimporter.cpp.o.d -o CMakeFiles/dbusmenuqt.dir/dbusmenuimporter.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt/dbusmenuimporter.cpp
 
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuimporter.cpp.i: cmake_force
@@ -121,7 +115,7 @@ plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenuimporter.cpp.s: cmake_for
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenushortcut_p.cpp.o: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/flags.make
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenushortcut_p.cpp.o: /home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt/dbusmenushortcut_p.cpp
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenushortcut_p.cpp.o: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenushortcut_p.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenushortcut_p.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenushortcut_p.cpp.o -MF CMakeFiles/dbusmenuqt.dir/dbusmenushortcut_p.cpp.o.d -o CMakeFiles/dbusmenuqt.dir/dbusmenushortcut_p.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt/dbusmenushortcut_p.cpp
 
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenushortcut_p.cpp.i: cmake_force
@@ -135,7 +129,7 @@ plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenushortcut_p.cpp.s: cmake_f
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenutypes_p.cpp.o: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/flags.make
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenutypes_p.cpp.o: /home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt/dbusmenutypes_p.cpp
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenutypes_p.cpp.o: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenutypes_p.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenutypes_p.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenutypes_p.cpp.o -MF CMakeFiles/dbusmenuqt.dir/dbusmenutypes_p.cpp.o.d -o CMakeFiles/dbusmenuqt.dir/dbusmenutypes_p.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt/dbusmenutypes_p.cpp
 
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenutypes_p.cpp.i: cmake_force
@@ -149,7 +143,7 @@ plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenutypes_p.cpp.s: cmake_forc
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/utils.cpp.o: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/flags.make
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/utils.cpp.o: /home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt/utils.cpp
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/utils.cpp.o: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/utils.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/utils.cpp.o -MF CMakeFiles/dbusmenuqt.dir/utils.cpp.o.d -o CMakeFiles/dbusmenuqt.dir/utils.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt/utils.cpp
 
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/utils.cpp.i: cmake_force
@@ -163,7 +157,7 @@ plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/utils.cpp.s: cmake_force
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/debug.cpp.o: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/flags.make
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/debug.cpp.o: plugin/libdbusmenuqt/debug.cpp
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/debug.cpp.o: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/debug.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/debug.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/debug.cpp.o -MF CMakeFiles/dbusmenuqt.dir/debug.cpp.o.d -o CMakeFiles/dbusmenuqt.dir/debug.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/debug.cpp
 
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/debug.cpp.i: cmake_force
@@ -178,7 +172,7 @@ plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenu_interface.cpp.o: plugin/
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenu_interface.cpp.o: plugin/libdbusmenuqt/dbusmenu_interface.cpp
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenu_interface.cpp.o: plugin/libdbusmenuqt/moc_dbusmenu_interface.cpp
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenu_interface.cpp.o: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenu_interface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenu_interface.cpp.o"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenu_interface.cpp.o -MF CMakeFiles/dbusmenuqt.dir/dbusmenu_interface.cpp.o.d -o CMakeFiles/dbusmenuqt.dir/dbusmenu_interface.cpp.o -c /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/dbusmenu_interface.cpp
 
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenu_interface.cpp.i: cmake_force
@@ -211,7 +205,7 @@ lib/libdbusmenuqt.a: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/debug.cpp.o
 lib/libdbusmenuqt.a: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/dbusmenu_interface.cpp.o
 lib/libdbusmenuqt.a: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/build.make
 lib/libdbusmenuqt.a: plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library ../../lib/libdbusmenuqt.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/janq/Downloads/applet-window-appmenu6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library ../../lib/libdbusmenuqt.a"
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt && $(CMAKE_COMMAND) -P CMakeFiles/dbusmenuqt.dir/cmake_clean_target.cmake
 	cd /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dbusmenuqt.dir/link.txt --verbose=$(VERBOSE)
 
@@ -225,7 +219,6 @@ plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/clean:
 
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/depend: plugin/libdbusmenuqt/dbusmenu_interface.cpp
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/depend: plugin/libdbusmenuqt/dbusmenu_interface.h
-plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/depend: plugin/libdbusmenuqt/dbusmenuqt_autogen/timestamp
 plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/depend: plugin/libdbusmenuqt/moc_dbusmenu_interface.cpp
 	cd /home/janq/Downloads/applet-window-appmenu6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/janq/Downloads/applet-window-appmenu6 /home/janq/Downloads/applet-window-appmenu6/plugin/libdbusmenuqt /home/janq/Downloads/applet-window-appmenu6/build /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : plugin/libdbusmenuqt/CMakeFiles/dbusmenuqt.dir/depend

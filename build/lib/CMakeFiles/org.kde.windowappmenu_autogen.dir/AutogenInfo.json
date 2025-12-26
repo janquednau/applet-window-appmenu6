@@ -29,6 +29,7 @@
 	"MOC_COMPILATION_FILE" : "/home/janq/Downloads/applet-window-appmenu6/build/lib/org.kde.windowappmenu_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
+		"HAVE_X11",
 		"KCOREADDONS_LIB",
 		"QT_CORE_LIB",
 		"QT_DBUS_LIB",
@@ -117,7 +118,7 @@
 	"MOC_PREDEFS_CMD" : 
 	[
 		"/usr/bin/c++",
-		"-std=gnu++14",
+		"-std=gnu++20",
 		"-dM",
 		"-E",
 		"-c",

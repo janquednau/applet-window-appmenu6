@@ -11,6 +11,7 @@
 -DQT_NO_KEYWORDS
 -DQT_NO_FOREACH
 -DQT_STRICT_ITERATORS
+-DHAVE_X11
 -o
 /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/moc_dbusmenu_interface.cpp
 /home/janq/Downloads/applet-window-appmenu6/build/plugin/libdbusmenuqt/dbusmenu_interface.h

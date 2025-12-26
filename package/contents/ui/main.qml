@@ -2,39 +2,27 @@
  * Copyright 2013  Heena Mahour <heena393@gmail.com>
  * Copyright 2013 Sebastian Kügler <sebas@kde.org>
  * Copyright 2016 Kai Uwe Broulik <kde@privat.broulik.de>
+ * Copyright 2025 Refactored for Plasma 6
  *
- * This program is free software;
- * you can redistribute it and/or
+ * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation;
- * either version 2 of
+ * published by the Free Software Foundation; either version 2 of
  * the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY;
- * without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.
- * If not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick
 import QtQuick.Layouts
-import Qt5Compat.GraphicalEffects
 import QtQuick.Controls
 
+// Modern Plasma 6 Imports
 import org.kde.plasma.plasmoid
 import org.kde.plasma.core as PlasmaCore
-import org.kde.plasma.plasma5support as Plasma5Support
 import org.kde.plasma.components 3.0 as PlasmaComponents
 import org.kde.taskmanager as TaskManager
 
+// Legacy support for keystate data engine (deprecated but needed for Alt detection)
+import org.kde.plasma.plasma5support as Plasma5Support
 
 import org.kde.private.windowAppMenu as AppMenuPrivate
-
 
 PlasmoidItem {
     id: root
@@ -45,10 +33,6 @@ PlasmoidItem {
     readonly property bool view: inCompactView
     readonly property bool inEditMode: plasmoid.userConfiguring || latteInEditMode
     readonly property bool menuAvailable: appMenuModel.menuAvailable
-
-    // KCMShell is not directly available in QML in Plasma 6 easily without extra imports,
-    // and this line was commented out in original code anyway.
-    // readonly property bool kcmAuthorized: true
 
     readonly property bool inFullView: !plasmoid.configuration.compactView && plasmoid.formFactor === PlasmaCore.Types.Horizontal
     readonly property bool inCompactView: !inFullView
@@ -63,6 +47,7 @@ PlasmoidItem {
     //BEGIN Layout properties
     Layout.fillWidth: inFullView && plasmoid.configuration.fillWidth && !(inLatte && inEditMode) ? true : root.vertical
     Layout.fillHeight: inFullView ? true : !root.vertical
+
     Layout.minimumWidth: {
         if (inFullView) {
             if (plasmoid.configuration.fillWidth && !inEditMode) {
@@ -106,6 +91,7 @@ PlasmoidItem {
     //END Layout properties
 
     //BEGIN Latte Dock Communicator
+    // Note: Latte Dock is largely unmaintained in 2025. Code kept for legacy support.
     property QtObject latteBridge: null
 
     property bool latteSupportsActiveWindowSchemes: plasmoid.configuration.supportsActiveWindowSchemes
@@ -132,9 +118,8 @@ PlasmoidItem {
     Broadcaster {
         id: broadcaster
     }
-    //END  Latte Dock Communicator
+    //END Latte Dock Communicator
 
-    //! make sure that on startup it will always be shown
     readonly property bool existsWindowActive: (windowInfoLoader.item && windowInfoLoader.item.existsWindowActive) || containmentIdentifierTimer.running
     readonly property bool existsWindowShown: (windowInfoLoader.item && windowInfoLoader.item.existsWindowShown) || containmentIdentifierTimer.running
 
@@ -154,8 +139,7 @@ PlasmoidItem {
         sourceComponent: latteBridge
         && latteBridge.windowsTracker
         && latteBridge.windowsTracker.currentScreen.lastActiveWindow
-        && latteBridge.windowsTracker.allScreens.lastActiveWindow ?
-        latteTrackerComponent : plasmaTasksModel
+        && latteBridge.windowsTracker.allScreens.lastActiveWindow ? latteTrackerComponent : plasmaTasksModel
 
         Component{
             id: latteTrackerComponent
@@ -171,20 +155,25 @@ PlasmoidItem {
             }
         }
     }
-    // END Window properties
 
     onViewChanged: {
-        plasmoid.view = view;
+        // plasmoid.view is deprecated/removed in some contexts of Plasma 6,
+        // but used here for compatibility if the property exists on the C++ side.
+        if (plasmoid.hasOwnProperty("view")) {
+            plasmoid.view = view;
+        }
     }
 
     Component.onCompleted: {
         plasmoid.configuration.supportsActiveWindowSchemes = false;
         plasmoid.configuration.windowTitleIsPresent = false;
 
-        //! fix Error: Cannot assign QObject* to QQuickItem*
-        plasmoid.setButtonGrid = buttonGrid;
+        // Fix: Do not assign QObject* to QQuickItem* directly if types mismatch
+        // In Plasma 6, use native properties
+        if (plasmoid.hasOwnProperty("setButtonGrid")) {
+            plasmoid.setButtonGrid = buttonGrid;
+        }
 
-        // using a Connections {} doesn't work for some reason in Qt >= 5.8
         plasmoid.requestActivateIndex.connect(function (index) {
             if(inFullView) {
                 var idx = Math.max(0, Math.min(buttonRepeater.count - 1, index))
@@ -200,9 +189,9 @@ PlasmoidItem {
     }
 
     Binding {
-        property: "plasmoid.menuColorScheme"
+        target: plasmoid
+        property: "menuColorScheme"
         when: plasmoid && appMenuModel
-
         value: {
             if (root.currentScheme === "_default_") {
                 return "";
@@ -210,13 +199,11 @@ PlasmoidItem {
 
             if (root.currentScheme === "_current_") {
                 if (latteSupportsActiveWindowSchemes) {
-                    /* colorScheme value was added after Latte v0.9.4*/
                     return lastActiveTaskItem && lastActiveTaskItem.hasOwnProperty("selectedTracker") ? lastActiveTaskItem.selectedTracker.colorScheme : "";
                 } else {
                     return "";
                 }
             }
-
             return plasmoid.configuration.selectedScheme;
         }
     }
@@ -274,7 +261,7 @@ PlasmoidItem {
             return PlasmaCore.Types.PassiveStatus;
         }
 
-        // So we can show mnemonic underlines only while Alt is pressed
+        // Use Plasma5Support only for legacy Keystate engine (Alt key detection)
         Plasma5Support.DataSource {
             id: keystateSource
             engine: "keystate"
@@ -286,32 +273,31 @@ PlasmoidItem {
         MouseArea {
             id: fullViewBackMousearea
             anchors.left: gridFlickable.right
-            width: visible ? parent.width - gridFlickable.width : 0 //! zero helps to release containsmouse on first showing
+            width: visible ? parent.width - gridFlickable.width : 0
             height: parent.height - 1
             visible: broadcaster.cooperationEstablished && root.inFullView && (fullLayout.status !== PlasmaCore.Types.HiddenStatus)
             && plasmoid.configuration.fillWidth && buttonRepeater.count > 0
             hoverEnabled: true
             propagateComposedEvents: true
 
-            onPressed: {
+            onPressed: (mouse) => {
                 mouse.accepted = false;
             }
 
-            onReleased: {
+            onReleased: (mouse) => {
                 mouse.accepted = false;
             }
         }
 
-        MenuFlickable{
+        MenuFlickable {
             id: gridFlickable
             width: parent.width < contentWidth && !inEditMode ? parent.width : contentWidth
             height: parent.height
             contentWidth: buttonGrid.width
             contentHeight: buttonGrid.height
 
-            GridLayout{
+            GridLayout {
                 id: buttonGrid
-
                 flow: GridLayout.LeftToRight
                 rowSpacing: 0
                 columnSpacing: 0
@@ -320,26 +306,19 @@ PlasmoidItem {
 
                 onCurrentIndexChanged: {
                     if (currentIndex >= 0 && plasmoid.menuIsShown) {
-                        //! as it appears this codepath when triggered from buttons entering under x11
-                        //! does not work because the shown menu gets the grabber.
-                        // So under x11 the applet event filter is responsible for buttons hovering
-                        // to trigger menus showing but for wayland the qml painted buttons
-                        // take up the task
                         plasmoid.requestActivateIndex(currentIndex);
                     }
                 }
 
                 readonly property bool containsMouse: {
-                    if (currentIndex>=0 || fullViewBackMousearea.containsMouse) {
+                    if (currentIndex >= 0 || fullViewBackMousearea.containsMouse) {
                         return true;
                     }
-
                     for (var i=0; i<buttonGrid.children.length; ++i) {
                         if (buttonGrid.children[i] && buttonGrid.children[i] !== buttonRepeater && buttonGrid.children[i].containsMouse) {
                             return true;
                         }
                     }
-
                     return false;
                 }
 
@@ -347,7 +326,6 @@ PlasmoidItem {
                     id: plasmoidTitleLbl
                     Layout.minimumWidth: implicitWidth
                     Layout.preferredWidth: Layout.minimumWidth
-
                     Layout.minimumHeight: fullLayout.height
                     Layout.preferredHeight: Layout.minimumHeight
 
@@ -367,17 +345,14 @@ PlasmoidItem {
                         return null;
                     }
 
-                    PaintedToolButton{
-                        id:menuItem
-
+                    PaintedToolButton {
+                        id: menuItem
                         Layout.minimumWidth: broadcaster.hiddenFromBroadcast && !inEditMode ? 0 : implicitWidth
                         Layout.preferredWidth: Layout.minimumWidth
-
                         Layout.minimumHeight: fullLayout.height
                         Layout.preferredHeight: Layout.minimumHeight
 
                         visible: activeMenu !== ""
-
                         buttonIndex: index
                         screenEdgeMargin: root.screenEdgeMargin
                         thicknessPadding: root.thicknessPadding
@@ -401,17 +376,14 @@ PlasmoidItem {
                     }
                 }
             }
-        } //end of flickable
+        }
 
-        FlickableIndicators{
+        FlickableIndicators {
             anchors.fill: parent
-
             leftIndicatorOpacity: gridFlickable.contentX / gridFlickable.contentsExtraSpace;
             rightIndicatorOpacity: (gridFlickable.contentsExtraSpace - gridFlickable.contentX) / gridFlickable.contentsExtraSpace
         }
 
-        //This Loader is to support maximize/restore active window for plasma panels.
-        // Latte panels are not and should not be influenced by this implementation
         Loader {
             active: plasmoid.configuration.fillWidth && (plasmoid.configuration.toggleMaximizedOnDoubleClick || plasmoid.configuration.toggleMaximizedOnMouseWheel) && containmentType !== 2
             anchors.fill: parent
@@ -432,7 +404,7 @@ PlasmoidItem {
                         }
                     }
 
-                    onWheel: {
+                    onWheel: (wheel) => {
                         if(plasmoid.configuration.toggleMaximizedOnMouseWheel){
                             var isMaximized = plasmoidTasksModel.data(plasmoidTasksModel.activeTask, TaskManager.AbstractTasksModel.IsMaximized)
                             if (wheel.angleDelta.y > 0 && !isMaximized) {
@@ -449,12 +421,12 @@ PlasmoidItem {
 
     AppMenuPrivate.AppMenuModel {
         id: appMenuModel
-
         filterByActive: plasmoid.configuration.filterByActive
         filterChildren: plasmoid.configuration.filterChildrenWindows
 
         screenGeometry: plasmoid.configuration.filterByScreen ? plasmoid.screenGeometry : Qt.rect(-1, -1, 0, 0)
-        onRequestActivateIndex: plasmoid.requestActivateIndex(index)
+        onRequestActivateIndex: (index) => plasmoid.requestActivateIndex(index)
+
         Component.onCompleted: {
             plasmoid.model = appMenuModel
         }
@@ -469,11 +441,11 @@ PlasmoidItem {
         }
     }
 
-    Timer{
+    Timer {
         id: containmentIdentifierTimer
         interval: 5000
         onTriggered: {
-            plasmoid.configuration.containmentType = 1; /*Plasma containment*/
+            plasmoid.configuration.containmentType = 1;
         }
     }
 }
