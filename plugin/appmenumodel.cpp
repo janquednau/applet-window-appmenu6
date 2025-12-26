@@ -23,7 +23,7 @@
 
 #include "appmenumodel.h"
 #include <config-appmenu.h>
-#include <dbusmenuimporter.h>
+#includesud <dbusmenuimporter.h>
 
 // local
 #include "wm/waylandwindowmanager.h"

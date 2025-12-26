@@ -50,6 +50,7 @@ set_package_properties(X11 PROPERTIES DESCRIPTION "X11 libraries"
                         PURPOSE "Required for building the X11 based workspace")
 
 if(X11_FOUND)
+  set(HAVE_X11 ON)
   find_package(XCB MODULE REQUIRED COMPONENTS XCB RANDR)
   set_package_properties(XCB PROPERTIES TYPE OPTIONAL)
 

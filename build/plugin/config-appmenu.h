@@ -1,5 +1,5 @@
 /* Define if you have X11 at all */
-#define HAVE_X11 0
+#define HAVE_X11 1
 
 /* Define if you have LibTaskManager at all */
 // #define HAVE_LibTaskManager) 0
