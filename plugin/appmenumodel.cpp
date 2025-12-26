@@ -62,13 +62,8 @@ AppMenuModel::AppMenuModel(QObject *parent)
     : QAbstractListModel(parent),
       m_serviceWatcher(new QDBusServiceWatcher(this))
 {
-#if LibTaskManager_CURRENTMINOR_VERSION < 19
-    // Disable for Plasma Desktop < 5.19
-    if (KWindowSystem::isPlatformWayland()) {
-        return;
-    }
-#endif
-
+    // Fix: Removed obsolete check for Plasma < 5.19 which caused compilation errors in Plasma 6
+    
     initWM();
 
     connect(this, &AppMenuModel::modelNeedsUpdate, this, [this] {
