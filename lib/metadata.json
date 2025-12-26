@@ -1,0 +1,22 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "trifonov.stas@gmail.com",
+                "Name": "Stanislav Trifonov"
+            }
+        ],
+        "Category": "Windows and Tasks",
+        "Description": "Shows the current window menu",
+        "Icon": "show-menu",
+        "Id": "org.kde.windowappmenu",
+        "License": "GPL-2.0+",
+        "Name": "Window AppMenu6",
+        "ServiceTypes": [
+            "Plasma/Applet"
+        ],
+        "Version": "0.8.0",
+        "Website": "https://github.com/StanFrad/applet-window-appmenu6/"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
